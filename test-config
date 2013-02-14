@@ -84,5 +84,6 @@ fi
 
 if [ -n "$port" ]; then
 	shopt -s expand_aliases
+	alias scp="scp -P $port"
 	alias ssh="ssh -p $port"
 fi
